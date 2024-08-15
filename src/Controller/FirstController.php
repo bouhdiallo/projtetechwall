@@ -25,7 +25,7 @@ class FirstController extends AbstractController
 
         $rand = Rand(0 , 10);
         if($rand ==3 ){
-            return $this->redirectToRoute(route:'first');
+            return $this->redirectToRoute(route:'app_first');
         }
         return $this->render('first/hello.html.twig', [
             'name' => 'fall',
